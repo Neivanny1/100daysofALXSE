@@ -47,5 +47,12 @@
         "issue": "No net",
         "issue_nature": "Chenged the NIC",
         "time_created": "2024-03-16 22:32:52"
+    },
+    "8": {
+        "issue_name": "Boot Loader",
+        "issue_status": "Done",
+        "issue": "No net",
+        "issue_nature": "Chenged the NIC",
+        "time_created": "2024-03-16 22:35:38"
     }
 }
