@@ -1,14 +1,12 @@
 import json
 
-#path to json file used as storage
-tasks_file = "tasks.json"
 
 '''
-Function to reads tickets submitted by complaints
+Function to reads task closed by techs
 '''
-def read_tasks():
+def read_storage(db):
   try:
-    with open(tasks_file, 'r') as file:
+    with open(db, 'r') as file:
       tasks = json.load(file)
   except FileNotFoundError:
     tasks = {}
@@ -17,6 +15,6 @@ def read_tasks():
 '''
 Function to write activities to JSON file
 '''
-def write_tasks(tasks):
-  with open(tasks_file, 'w') as file:
+def write_storage(db,tasks):
+  with open(db, 'w') as file:
     json.dump(tasks, file, indent=4)
